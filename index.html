@@ -1,63 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document Viewer</title>
+    <title>Shared Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f3f4;
         }
+
+        /* Top navigation bar */
         .topbar {
-            background: #ffffff;
-            border-bottom: 1px solid #ddd;
+            background-color: #ffffff;
             padding: 12px 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-weight: bold;
             font-size: 18px;
+            color: #202124;
         }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
+
+        .status {
+            font-size: 14px;
+            color: #5f6368;
+        }
+
+        /* Document container */
+        .document-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .document {
             background: #ffffff;
-            padding: 30px;
-            border: 1px solid #e0e0e0;
-            border-radius: 4px;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 20px;
-        }
-        p {
+            width: 800px;
+            min-height: 900px;
+            padding: 60px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             line-height: 1.6;
         }
-        .note {
-            margin-top: 30px;
-            padding: 12px;
-            background: #f0f0f0;
-            border-radius: 4px;
+
+        h1 {
+            margin-top: 0;
+            font-size: 26px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #80868b;
         }
     </style>
 </head>
 <body>
 
-<div class="topbar">
-    Document Viewer
-</div>
-
-<div class="container">
-    <h1>Shared Document – Current Version</h1>
-    <p>This page displays the latest version of the shared document referenced in the email.</p>
-
-    <p>Lorem ipsum placeholder text can go here to simulate document content. 
-    This page is for viewing only and contains no interactive elements.</p>
-
-    <div class="note">
-        <strong>Status:</strong> Updated and available for reference.<br>
-        <strong>Last Modified:</strong> February 2026
+    <div class="topbar">
+        <div class="logo">Shared Document Viewer</div>
+        <div class="status">View Only</div>
     </div>
 
-    <p class="note">This is a static page with no login, no scripts, and no data collection.</p>
-</div>
+    <div class="document-wrapper">
+        <div class="document">
+            <h1>Project Notes</h1>
+
+            <p><strong>Last Updated:</strong> February 18, 2026</p>
+
+            <p>
+                These notes summarize the latest updates to the project.
+                Please review the following sections carefully.
+            </p>
+
+            <h3>Section 1: Overview</h3>
+            <p>
+                This document contains working notes and updates.
+                All collaborators should review changes and suggest edits
+                if necessary.
+            </p>
+
+            <h3>Section 2: Recent Changes</h3>
+            <ul>
+                <li>Added new milestone timeline</li>
+                <li>Updated task assignments</li>
+                <li>Clarified documentation requirements</li>
+            </ul>
+
+            <h3>Comments</h3>
+            <p>
+                Please reply to the original email if modifications are required.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Document sharing service | Internal Use Only
+    </div>
 
 </body>
 </html>
